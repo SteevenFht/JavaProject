@@ -1,0 +1,193 @@
+@startuml uml
+
+abstract class Competition {
+    - final competitors: List<Competitor>
+    - matchType: Match
+	# lastResults: Map<Competitor, Results>
+    ---
+    ..constructor..
+    + Competition(List<Competitor>)
+    + Competition(List<Competitor>, Match)
+    ..abstracts..
+    # {abstract} play(List<Competitor>)
+    ..methods..
+    + play()
+    # playMatch(c1: Competitor, c2: Competitor)
+    + ranking(): Map<Competitor, Integer>
+    + applyScoreToCompetitors(Map<Competitor,Results>)
+    + resetScore()
+    + resetScore(List<Competitor>)
+    ..getter / setter..
+    + getCOMPETITORS()
+    + getMatchType(): Match
+}
+
+enum Results {
+    Victory(1)
+    Defeat(0)
+    ---
+    - POINT:int
+    ---
+    ..constructor..
+    - Results(int value)
+    ..getter/setter..
+    + getPoint():int
+}
+
+class Tournament {
+    - remainingCompetitors: List<Competitor>
+    ---
+    ..constructor..
+    + Tournament(List<Competitor>)
+    + Tournament(List<Competitor>, Match)
+    ..method..
+    + competitorLost(Competitor): List<Competitor>
+    # play(List<Competitor>)
+    + playMatch(c1: Competitor, c2: Competitor)
+    + generateMatchs(List<Competitor>): LinkedList<Competitor[ ]>
+    ..getter/setter..
+    + getRemainingCompetitors(): List<Competitor>
+    + setRemainingCompetitors(List<Competitor>)
+}
+
+class League {
+    ..constructor..
+    + League(List<Competitor>)
+    + League(List<Competitor>, Match)
+    ..method..
+    # play(List<Competitor>)
+    + generateMatchs(List<Competitor> competitors): LinkedList<Competitor[]>
+}
+
+class Master {
+    - selction: CompetitorSelection
+    ..constructor..
+    + Master(List<Competitor>, nbLeague: int, CompetitorSelection)
+    + Master(List<Competitor>, nbLeague: int, CompetitorSelection, Match)
+    ..method..
+    # play(List<Competitor>)
+    + playGroupStage(): List<Map<Competitor, Integer>>
+    + generateLeague(): void
+    ..getter/setter..
+    + getSelction(): CompetitorSelection
+    + setSelection(CompetitorSelection)
+    + getLeagues(): League[]
+    + setLeagues(leagues: League[]): void
+    + getNBLeagues(): int
+}
+
+interface CompetitorSelection {
+    ..method..
+    + getNumberOfSelectedCompetitors(nbListCompetitors: int): int
+    + selectRemainingPlayers(List<Map<Competitor,Integer>>): List<Competitor> 
+}
+
+class FirstGroupStage {
+    ..constructor..
+    + FirstGroupStage()
+    ..method..
+    + selectRemainingPlayers(List<Map<Competitor,Integer>>): List<Competitor>
+    + getNumberOfSelectedCompetitors(nbListCompetitors: int): int
+}
+
+class FirstTwoGroupStage {
+    ..constructor..
+    + FirstTwoGroupStageMaster()
+    ..method..
+    + selectRemainingPlayers(List<Map<Competitor,Integer>>): List<Competitor>
+    + getNumberOfSelectedCompetitors(nbListCompetitors: int): int
+}
+
+interface Match {
+    ..method..
+    + versus(c1: Competitor, c2: Competitor): Map<Competitor, Results>
+}
+
+class MatchRandom {
+    ..constructor..
+    + MatchRandom()
+    ..method..
+    + versus(c1: Competitor, c2: Competitor): Map<Competitor,Results>)
+}
+
+class Competitor {
+    - name: String
+    - points: Int
+    ---
+    ..constructor..
+    + Competitor(name:String)
+    ..methods..
+    + addPoints(int)
+    ..getter / setter..
+    + getName(): String
+    + setName(String)
+    + getPoints():int
+    + setPoints(points: int): void
+    + addPoints(int)
+}
+
+abstract Observable {
+    - observers: List<MatchObserver>
+    ---
+    ..constructor..
+    + Observable()
+    ..methods..
+    + setObservers(observers: List<MatchObserver>): void
+    + getObservers(): List<MatchObserver>
+    + addObservers(observer: MatchObserver): void
+    + removeObserver(observer: MatchObserver): void
+    + matchOver(matchResult: Map<Competitor, Results>): void
+}
+
+interface MatchObserver {
+    ..methods..
+    + matchPlayed(matchResult: Map<Competitor, Results>): void
+}
+
+class Bookmaker {
+    - nom: String
+    - dialogues: List<String>
+    --
+    ..constructor..
+    + Bookmaker(name:String)
+    ..methods..
+    + matchPlayed(matchResult: Map<Competitor, Results>): void
+    ..getter/setter..
+    + getName(): String
+    + setName(String)
+}
+
+class Journalist {
+    - nom: String
+    - comments: List<String>
+    --
+    ..constructor..
+    + Journalist(name:String)
+    ..methods..
+    + matchPlayed(matchResult: Map<Competitor, Results>): void
+    ..getter/setter..
+    + getName(): String
+    + setName(String)
+}
+
+Observable <|-down- Competition
+MatchObserver <-down- Observable
+MatchObserver <|.up. Bookmaker
+MatchObserver <|.up. Journalist
+
+Competition <|-down- League
+Competition <|-down- Tournament
+Competition <|-down- Master
+
+CompetitorSelection <-up- Master:play
+
+Master  <-left- Tournament:play
+Match <|.up. MatchRandom
+Competitor <-left- Competition:competitors
+Results <-right- Competition:applyScoreToCompetitors
+Results <-up- Match:versus
+
+CompetitorSelection <|.down. FirstGroupStage
+CompetitorSelection <|.down. FirstTwoGroupStage
+
+@enduml
