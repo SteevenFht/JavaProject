@@ -31,8 +31,17 @@ jobs:
       - name: Run tests
         run: make test
 
+      - name: Check SONAR_TOKEN presence
+        run: |
+          if [ -z "${{ secrets.SONAR_TOKEN }}" ]; then
+            echo "❌ SONAR_TOKEN is NOT set"
+            exit 1
+          else
+            echo "✅ SONAR_TOKEN is set"
+          fi
+
       - name: SonarCloud Scan
-        uses: SonarSource/sonarqube-scan-action@master
+        uses: SonarSource/sonarqube-scan-action@v1
         with:
           args: >
             -Dsonar.projectKey=SteevenFht_competition
