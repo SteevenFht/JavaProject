@@ -2,19 +2,19 @@ name: Makefile CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [main]
   pull_request:
-    branches: [ "main" ]
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Set up JDK 17
-        id: setup-java
         uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -26,8 +26,8 @@ jobs:
           curl -L -o lib/junit-platform-console-standalone-1.9.0.jar \
             https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.9.0/junit-platform-console-standalone-1.9.0.jar
 
-      - name: Build with Makefile
-        run: make
+      - name: Build project, generate docs, jar
+        run: make all
 
       - name: Run tests
         run: make test
@@ -37,9 +37,8 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
-          JAVA_HOME: ${{ steps.setup-java.outputs.java-home }}
         with:
           args: >
             -Dsonar.projectKey=SteevenFht_competition
             -Dsonar.organization=SteevenFht
-            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+            -Dsonar.java.binaries=classes
