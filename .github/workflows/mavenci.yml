@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      SONAR_HOST_URL: https://sonarcloud.io 
+      SONAR_HOST_URL: https://sonarcloud.io
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -21,6 +21,11 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          cache: 'maven'       # optionnel mais conseillé pour accélérer les builds
+          java-home: ${{ env.JAVA_HOME }}
+
+      - name: Check Java version
+        run: java -version
 
       - name: Build with Maven
         run: mvn clean verify
