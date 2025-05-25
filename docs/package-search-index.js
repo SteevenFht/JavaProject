@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"sportsCompetition"},{"l":"sportsCompetition.competition"},{"l":"sportsCompetition.competitorSelection"},{"l":"sportsCompetition.exception"},{"l":"sportsCompetition.match"},{"l":"sportsCompetition.observer"},{"l":"sportsCompetition.util"}];updateSearchResults();
