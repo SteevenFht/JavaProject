@@ -12,10 +12,6 @@
 
     <name>Sports Competition</name>
 
-    <properties>
-    <sonar.organization>steevenfht</sonar.organization>
-    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    </properties>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
