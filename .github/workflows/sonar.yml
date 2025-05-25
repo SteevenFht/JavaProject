@@ -1,44 +1,31 @@
-name: SonarQube Scan
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-
 jobs:
   sonar:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Set up JDK 17
+        id: setup-java
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
           distribution: 'temurin'
+          java-version: '17'
 
       - name: Install SonarScanner
         run: |
           wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.8.0.2856-linux.zip
           unzip sonar-scanner-cli-4.8.0.2856-linux.zip
-          ls -la sonar-scanner-4.8.0.2856-linux/bin
           mv sonar-scanner-4.8.0.2856-linux sonar-scanner
-
-      - name: Debug current directory and files
-        run: |
-          pwd
-          ls -la
-          ls -la sonar-scanner/bin
 
       - name: Run SonarQube Scan
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
-          JAVA_HOME: ${{ steps.setup-java.outputs.java-home }}
+          JAVA_HOME: ${{ steps.setup-java.outputs.path }}
         run: |
+          export PATH=$JAVA_HOME/bin:$PATH
+          java -version
           ./sonar-scanner/bin/sonar-scanner \
             -Dsonar.projectKey=SteevenFht_competition \
             -Dsonar.organization=SteevenFht \
