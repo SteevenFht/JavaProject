@@ -9,9 +9,6 @@ on:
 jobs:
   sonar:
     runs-on: ubuntu-latest
-    env:
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      SONAR_HOST_URL: https://sonarcloud.io
 
     steps:
       - name: Checkout code
@@ -23,17 +20,25 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Set JAVA_HOME environment variable
-        run: echo "JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))" >> $GITHUB_ENV
+      - name: Install SonarScanner
+        run: |
+          wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.8.0.2856-linux.zip
+          unzip sonar-scanner-cli-4.8.0.2856-linux.zip
+          ls -la sonar-scanner-4.8.0.2856-linux/bin
+          mv sonar-scanner-4.8.0.2856-linux sonar-scanner
 
-      - name: Build with Maven
-        run: mvn clean verify
+      - name: Debug current directory and files
+        run: |
+          pwd
+          ls -la
+          ls -la sonar-scanner/bin
 
       - name: Run SonarQube Scan
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: https://sonarcloud.io
+          JAVA_HOME: ${{ steps.setup-java.outputs.java-home }}
         run: |
-          echo "Using java version:"
-          $JAVA_HOME/bin/java -version
-
           ./sonar-scanner/bin/sonar-scanner \
             -Dsonar.projectKey=SteevenFht_competition \
             -Dsonar.organization=SteevenFht \
@@ -41,6 +46,4 @@ jobs:
             -Dsonar.sources=src/main/java \
             -Dsonar.tests=src/test/java \
             -Dsonar.junit.reportPaths=target/surefire-reports \
-            -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml \
-            -Dsonar.host.url=$SONAR_HOST_URL \
-            -Dsonar.login=$SONAR_TOKEN
+            -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
