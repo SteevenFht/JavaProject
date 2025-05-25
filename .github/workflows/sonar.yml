@@ -20,10 +20,6 @@ jobs:
           distribution: temurin
           java-version: 17
 
-     
-      - name: Build with Maven
-        run: mvn clean package
-
       - name: Cache Sonar packages
         uses: actions/cache@v3
         with:
@@ -31,8 +27,11 @@ jobs:
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
 
-      - name: Run SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: https://sonarcloud.io
+      - name: Build with Maven
+        run: mvn clean package
+
+      - name: Run SonarQube Scan with Maven
+        run: mvn sonar:sonar \
+          -Dsonar.organization=steevenfht \
+          -Dsonar.host.url=https://sonarcloud.io \
+          -Dsonar.login=${{ secrets.SONAR_TOKEN }}
