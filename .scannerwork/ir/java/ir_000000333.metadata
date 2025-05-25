@@ -1,0 +1,10 @@
+sportsCompetition.competition.Tournament#generateMatchs(Ljava/util/List;)Ljava/util/LinkedList;
+false
+9fc7ac651d0ed0f7defe1bb88876285f
+java.util.LinkedList#<init>()V
+java.util.LinkedList#instance-init#
+==
+add java.util.LinkedList#add(Ljava/lang/Object;)Z
+get java.util.List#get(I)Ljava/lang/Object;
+getRemainingCompetitors sportsCompetition.competition.Tournament#getRemainingCompetitors()Ljava/util/List;
+size java.util.List#size()I

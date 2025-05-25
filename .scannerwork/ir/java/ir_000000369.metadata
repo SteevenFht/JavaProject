@@ -1,0 +1,7 @@
+sportsCompetitionTest.competition.CompetitionTest#playMatchTest()V
+false
+f8b651b218110fbff5f041b3d6c1458c
+==
+!unknownMethod! !unknownMethod!
+playMatch sportsCompetition.competition.Competition#playMatch(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)V
+println java.io.PrintStream#println(Ljava/lang/String;)V

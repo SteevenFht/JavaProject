@@ -1,0 +1,6 @@
+sportsCompetitionTest.competition.LeagueTest#init()V
+false
+f50646b25699eca599715e079bb6fc89
+==
+generateMatchs sportsCompetition.competition.League#generateMatchs(Ljava/util/List;)Ljava/util/LinkedList;
+init sportsCompetitionTest.competition.CompetitionTest#init()V

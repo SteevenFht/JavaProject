@@ -1,0 +1,14 @@
+sportsCompetitionTest.competition.CompetitionTest#rankingTest()V
+false
+f68d00e8baa8fdcc2ce51decb00ecef0
+java.util.LinkedList#<init>()V
+java.util.LinkedList#instance-init#
+==
+!unknownMethod! !unknownMethod!
+add java.util.LinkedList#add(Ljava/lang/Object;)Z
+addPoints sportsCompetition.Competitor#addPoints(I)V
+get java.util.Map#get(Ljava/lang/Object;)Ljava/lang/Object;
+getPoints sportsCompetition.Competitor#getPoints()I
+ranking sportsCompetition.competition.Competition#ranking()Ljava/util/Map;
+size java.util.Map#size()I
+values java.util.Map#values()Ljava/util/Collection;

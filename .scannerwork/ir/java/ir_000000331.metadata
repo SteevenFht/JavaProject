@@ -1,0 +1,8 @@
+sportsCompetition.competition.Tournament#play(Ljava/util/List;)V
+false
+c038f64b1cfc8bbee04324598d7f735a
+==
+generateMatchs sportsCompetition.competition.Tournament#generateMatchs(Ljava/util/List;)Ljava/util/LinkedList;
+getRemainingCompetitors sportsCompetition.competition.Tournament#getRemainingCompetitors()Ljava/util/List;
+playMatch sportsCompetition.competition.Tournament#playMatch(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)V
+size java.util.List#size()I

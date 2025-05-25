@@ -1,0 +1,8 @@
+sportsCompetitionTest.competition.CompetitionTest#resetScoreTest()V
+false
+dc16961370573356e8abcced182a948b
+==
+!unknownMethod! !unknownMethod!
+addPoints sportsCompetition.Competitor#addPoints(I)V
+getPoints sportsCompetition.Competitor#getPoints()I
+resetScore sportsCompetition.competition.Competition#resetScore()V

@@ -1,0 +1,13 @@
+sportsCompetitionTest.competition.TournamentTest#playTest()V
+false
+d37565a011a1b4fafe321773b70b26fa
+java.util.Arrays#equals([I[I)Z
+java.util.Arrays#sort([I)V
+sportsCompetition.util.TextFormat#getFORMAT()Ljava/lang/String;
+==
+!unknownMethod! !unknownMethod!
+get java.util.List#get(I)Ljava/lang/Object;
+getPoints sportsCompetition.Competitor#getPoints()I
+play sportsCompetition.competition.Competition#play()V
+println java.io.PrintStream#println(Ljava/lang/String;)V
+size java.util.List#size()I

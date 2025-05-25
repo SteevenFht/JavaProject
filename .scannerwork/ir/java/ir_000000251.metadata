@@ -1,0 +1,5 @@
+sportsCompetition.competition.League#<init>(Ljava/util/List;LsportsCompetition/match/Match;)V
+false
+9c8960b8827c890bb1cfa7fbef523bd2
+==
+<init> sportsCompetition.competition.Competition#<init>(Ljava/util/List;LsportsCompetition/match/Match;)V

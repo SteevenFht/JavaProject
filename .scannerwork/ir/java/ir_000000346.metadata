@@ -1,0 +1,13 @@
+sportsCompetition.util.MapUtil#sortByDescendingValue(Ljava/util/Map;)Ljava/util/Map;
+false
+bfce084e573d7ec3f5f5f577310e15e5
+java.util.ArrayList#<init>(Ljava/util/Collection;)V
+java.util.ArrayList#instance-init#
+java.util.Collections#sort(Ljava/util/List;Ljava/util/Comparator;)V
+java.util.LinkedHashMap#<init>()V
+java.util.LinkedHashMap#instance-init#
+==
+entrySet java.util.Map#entrySet()Ljava/util/Set;
+getKey java.util.Map$Entry#getKey()Ljava/lang/Object;
+getValue java.util.Map$Entry#getValue()Ljava/lang/Object;
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

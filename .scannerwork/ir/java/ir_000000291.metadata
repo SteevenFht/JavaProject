@@ -1,0 +1,5 @@
+sportsCompetitionTest.mock.MockCompetition#<init>(Ljava/util/List;LsportsCompetition/match/Match;)V
+false
+283d90d20e15b53741b310dc7d0519f2
+==
+<init> sportsCompetition.competition.Competition#<init>(Ljava/util/List;LsportsCompetition/match/Match;)V

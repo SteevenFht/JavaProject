@@ -1,0 +1,7 @@
+sportsCompetitionTest.competition.MasterTest#CreateCompetition(Ljava/util/List;LsportsCompetition/match/Match;)LsportsCompetition/competition/Competition;
+false
+ade4a2c59ba9b448392fea6a48654140
+sportsCompetition.competition.Master#<init>(Ljava/util/List;ILsportsCompetition/competitorSelection/CompetitorSelection;LsportsCompetition/match/Match;)V
+sportsCompetition.competition.Master#instance-init#
+sportsCompetition.competitorSelection.FirstTwoGroupStage#<init>()V
+sportsCompetition.competitorSelection.FirstTwoGroupStage#instance-init#

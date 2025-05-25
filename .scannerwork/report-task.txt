@@ -1,0 +1,7 @@
+organization=steevenfht
+projectKey=steevenfht_competition
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.63733
+dashboardUrl=https://sonarcloud.io/dashboard?id=steevenfht_competition
+ceTaskId=AZcJYDKxMPEwOf-RYJ3H
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZcJYDKxMPEwOf-RYJ3H

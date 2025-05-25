@@ -1,0 +1,13 @@
+sportsCompetition.competition.Competition#DisplayRanking(Ljava/util/Map;)V
+false
+14ba26a937c88ef1f52c69948ea014df
+java.lang.String#length()I
+java.lang.String#repeat(I)Ljava/lang/String;
+sportsCompetition.competition.Competition#cutName(Ljava/lang/String;)Ljava/lang/String;
+sportsCompetition.util.TextFormat#getFORMAT()Ljava/lang/String;
+==
+entrySet java.util.Map#entrySet()Ljava/util/Set;
+getKey java.util.Map$Entry#getKey()Ljava/lang/Object;
+getName sportsCompetition.Competitor#getName()Ljava/lang/String;
+getValue java.util.Map$Entry#getValue()Ljava/lang/Object;
+println java.io.PrintStream#println(Ljava/lang/String;)V

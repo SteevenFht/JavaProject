@@ -1,0 +1,7 @@
+sportsCompetitionTest.CompetitorTest#equalsTest()V
+false
+76ed1e2af226aedc1dcebed76b5b472d
+==
+!unknownMethod! !unknownMethod!
+addPoints sportsCompetition.Competitor#addPoints(I)V
+equals sportsCompetition.Competitor#equals(Ljava/lang/Object;)Z

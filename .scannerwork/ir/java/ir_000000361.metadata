@@ -1,0 +1,5 @@
+sportsCompetition.observer.Observable#matchOver(Ljava/util/Map;)V
+false
+04970ee5acfdcde699f318a63a2a2f08
+==
+matchPlayed sportsCompetition.observer.MatchObserver#matchPlayed(Ljava/util/Map;)V

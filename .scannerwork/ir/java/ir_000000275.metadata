@@ -1,0 +1,5 @@
+sportsCompetitionTest.CompetitorTest#init()V
+false
+7fd55ce45a419fbcbe81c482dd08fdb9
+sportsCompetition.Competitor#<init>(Ljava/lang/String;)V
+sportsCompetition.Competitor#instance-init#

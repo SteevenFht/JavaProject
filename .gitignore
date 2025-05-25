@@ -1,2 +1,49 @@
-
+# Fichiers macOS
 .DS_Store
+
+# Fichiers et dossiers compilés
+/bin/
+/build/
+/out/
+/target/
+/classes/
+
+# Fichiers et dossiers IDE
+/.idea/
+/*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Fichiers de logs
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Fichiers spécifiques à Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Fichiers spécifiques à Gradle
+.gradle/
+/build/
+
+# Fichiers de test et rapport de couverture
+/target/surefire-reports/
+/target/site/jacoco/
+
+# Bibliothèques externes (si pas dans Git)
+/lib/
+
+# Autres
+*.class

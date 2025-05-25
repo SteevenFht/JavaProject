@@ -1,0 +1,12 @@
+sportsCompetitionTest.competition.CompetitionTest#applyScoreToCompetitorsTest()V
+false
+2c53be76a313d7732676d528d14399e1
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+sportsCompetition.Results#getPoint()I
+==
+!unknownMethod! !unknownMethod!
+addPoints sportsCompetition.Competitor#addPoints(I)V
+applyScoreToCompetitors sportsCompetition.competition.Competition#applyScoreToCompetitors(Ljava/util/Map;)V
+getPoints sportsCompetition.Competitor#getPoints()I
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

@@ -1,0 +1,10 @@
+sportsCompetitionTest.competition.MasterTest#generateLeagueTest()V
+false
+f436fa91bc36a18246e7214e5be16e92
+==
+!unknownMethod! !unknownMethod!
+generateLeague sportsCompetition.competition.Master#generateLeague()V
+getCompetitors sportsCompetition.competition.Competition#getCompetitors()Ljava/util/List;
+getLeagues sportsCompetition.competition.Master#getLeagues()[LsportsCompetition/competition/League;
+getNBLeagues sportsCompetition.competition.Master#getNBLeagues()I
+size java.util.List#size()I

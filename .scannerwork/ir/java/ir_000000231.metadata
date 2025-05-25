@@ -1,0 +1,8 @@
+sportsCompetitionTest.MatchTest#matchResultsTest()V
+false
+69ffcea748cf3b15477b2c643a06da7f
+==
+!unknownMethod! !unknownMethod!
+get java.util.Map#get(Ljava/lang/Object;)Ljava/lang/Object;
+size java.util.Map#size()I
+versus sportsCompetitionTest.mock.MockMatch#versus(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)Ljava/util/Map;

@@ -1,0 +1,5 @@
+sportsCompetition.observer.Observable#removeObserver(LsportsCompetition/observer/MatchObserver;)V
+false
+8a9cea0c870135a1fc3ae92ea5ddebbd
+==
+remove java.util.List#remove(Ljava/lang/Object;)Z

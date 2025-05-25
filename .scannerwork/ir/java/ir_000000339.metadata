@@ -1,0 +1,15 @@
+sportsCompetition.observer.Bookmaker#matchPlayed(Ljava/util/Map;)V
+false
+d275cbb1b7b8702857c2e8118c3626c9
+java.lang.Enum#equals(Ljava/lang/Object;)Z
+sportsCompetition.observer.Bookmaker#checkRate(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)V
+sportsCompetition.observer.Bookmaker#truncateTo(DI)D
+sportsCompetition.util.TextFormat#getFORMAT()Ljava/lang/String;
+==
+entrySet java.util.Map#entrySet()Ljava/util/Set;
+get java.util.Map#get(Ljava/lang/Object;)Ljava/lang/Object;
+getKey java.util.Map$Entry#getKey()Ljava/lang/Object;
+getName sportsCompetition.Competitor#getName()Ljava/lang/String;
+getValue java.util.Map$Entry#getValue()Ljava/lang/Object;
+println java.io.PrintStream#println(Ljava/lang/String;)V
+setRates sportsCompetition.observer.Bookmaker#setRates(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)V

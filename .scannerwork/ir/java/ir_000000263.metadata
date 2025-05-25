@@ -1,0 +1,8 @@
+sportsCompetition.match.MatchRandom#versus(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)Ljava/util/Map;
+false
+09b7886745a4660f5f556cd7533e3fbc
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+==
+nextInt java.util.Random#nextInt(I)I
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

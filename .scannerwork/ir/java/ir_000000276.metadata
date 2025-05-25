@@ -1,0 +1,7 @@
+sportsCompetitionTest.CompetitorTest#addPointTest()V
+false
+1b52f5a741ab2ac12376c05a0adc78a0
+==
+!unknownMethod! !unknownMethod!
+addPoints sportsCompetition.Competitor#addPoints(I)V
+getPoints sportsCompetition.Competitor#getPoints()I

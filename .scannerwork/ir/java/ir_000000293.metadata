@@ -1,0 +1,5 @@
+sportsCompetitionTest.mock.MockCompetition#ranking()Ljava/util/Map;
+false
+851d843482f90cefcdda6a4589786daa
+==
+ranking sportsCompetition.competition.Competition#ranking()Ljava/util/Map;

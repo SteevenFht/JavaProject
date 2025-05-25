@@ -1,0 +1,9 @@
+sportsCompetitionTest.competition.LeagueTest#playTest()V
+false
+15a2ef496a53bd9b6bb63a53dbfcec3d
+sportsCompetition.util.TextFormat#getFORMAT()Ljava/lang/String;
+==
+!unknownMethod! !unknownMethod!
+getPoints sportsCompetition.Competitor#getPoints()I
+play sportsCompetition.competition.Competition#play()V
+println java.io.PrintStream#println(Ljava/lang/String;)V

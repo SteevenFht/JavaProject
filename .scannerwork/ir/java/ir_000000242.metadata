@@ -1,0 +1,13 @@
+sportsCompetition.competition.Competition#playMatch(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)V
+false
+9d9833c8e70875949a1845219513b882
+java.lang.Enum#equals(Ljava/lang/Object;)Z
+==
+applyScoreToCompetitors sportsCompetition.competition.Competition#applyScoreToCompetitors(Ljava/util/Map;)V
+entrySet java.util.Map#entrySet()Ljava/util/Set;
+getKey java.util.Map$Entry#getKey()Ljava/lang/Object;
+getName sportsCompetition.Competitor#getName()Ljava/lang/String;
+getValue java.util.Map$Entry#getValue()Ljava/lang/Object;
+matchOver sportsCompetition.observer.Observable#matchOver(Ljava/util/Map;)V
+println java.io.PrintStream#println(Ljava/lang/String;)V
+versus sportsCompetition.match.Match#versus(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)Ljava/util/Map;

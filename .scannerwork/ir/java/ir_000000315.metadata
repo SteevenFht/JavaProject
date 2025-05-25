@@ -1,0 +1,6 @@
+sportsCompetition.competition.Master#<init>(Ljava/util/List;ILsportsCompetition/competitorSelection/CompetitorSelection;LsportsCompetition/match/Match;)V
+false
+f7dd8f9afb819c57816ea44bebce7991
+==
+<init> sportsCompetition.competition.Competition#<init>(Ljava/util/List;LsportsCompetition/match/Match;)V
+setSelection sportsCompetition.competition.Master#setSelection(LsportsCompetition/competitorSelection/CompetitorSelection;)V

@@ -1,0 +1,5 @@
+sportsCompetition.competition.Competition#resetScore(Ljava/util/List;)V
+false
+b42eac8ffb8a3c2a402e2b4a1cf9f8d4
+==
+setPoints sportsCompetition.Competitor#setPoints(I)V

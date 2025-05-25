@@ -1,0 +1,8 @@
+sportsCompetitionTest.competition.MasterTest#observerCalledForEachMatch()V
+false
+d5aeaaa97279fa2413ac0755829cf5f5
+==
+!unknownMethod! !unknownMethod!
+addObserver sportsCompetition.observer.Observable#addObserver(LsportsCompetition/observer/MatchObserver;)V
+play sportsCompetition.competition.Competition#play()V
+println java.io.PrintStream#println(I)V

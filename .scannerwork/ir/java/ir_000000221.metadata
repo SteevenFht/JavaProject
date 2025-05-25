@@ -1,0 +1,8 @@
+sportsCompetition.observer.Journalist#<init>(Ljava/lang/String;)V
+false
+46bcb2988643da471c6f67a5fbe6e9cb
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+java.util.Collections#addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
+java.util.Random#<init>()V
+java.util.Random#instance-init#

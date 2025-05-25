@@ -1,0 +1,5 @@
+sportsCompetition.competition.Master#DisplayRanking(Ljava/util/Map;)V
+false
+de4467bb7e4091103db943e1a84657b9
+==
+println java.io.PrintStream#println()V

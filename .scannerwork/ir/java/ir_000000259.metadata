@@ -1,0 +1,15 @@
+sportsCompetitionTest.competition.TournamentTest#matchListGenerationTest()V
+false
+27a0dcf3a5ee2ab8d8b115d9c3237278
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+==
+!unknownMethod! !unknownMethod!
+containsKey java.util.HashMap#containsKey(Ljava/lang/Object;)Z
+entrySet java.util.HashMap#entrySet()Ljava/util/Set;
+generateMatchs sportsCompetition.competition.Tournament#generateMatchs(Ljava/util/List;)Ljava/util/LinkedList;
+get java.util.HashMap#get(Ljava/lang/Object;)Ljava/lang/Object;
+getValue java.util.Map$Entry#getValue()Ljava/lang/Object;
+put java.util.HashMap#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+size java.util.LinkedList#size()I
+size java.util.List#size()I

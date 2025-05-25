@@ -1,0 +1,9 @@
+sportsCompetition.competition.Master#playGroupStage()Ljava/util/List;
+false
+039b4f5d3f4a12fe75ccca383b3645a2
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+==
+add java.util.List#add(Ljava/lang/Object;)Z
+play sportsCompetition.competition.Competition#play()V
+ranking sportsCompetition.competition.Competition#ranking()Ljava/util/Map;

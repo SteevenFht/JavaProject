@@ -1,0 +1,6 @@
+sportsCompetition.competition.Tournament#competitorLost(LsportsCompetition/Competitor;)Ljava/util/List;
+false
+4358f911de7b09f5907508bbe8d189ca
+==
+getRemainingCompetitors sportsCompetition.competition.Tournament#getRemainingCompetitors()Ljava/util/List;
+remove java.util.List#remove(Ljava/lang/Object;)Z

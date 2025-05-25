@@ -1,0 +1,8 @@
+sportsCompetitionTest.competition.TournamentTest#observerCalledForEachMatch()V
+false
+56176d11d3e4f4126c6797dbb5e14adb
+==
+!unknownMethod! !unknownMethod!
+addObserver sportsCompetition.observer.Observable#addObserver(LsportsCompetition/observer/MatchObserver;)V
+play sportsCompetition.competition.Competition#play()V
+size java.util.List#size()I

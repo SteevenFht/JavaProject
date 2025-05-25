@@ -1,0 +1,5 @@
+sportsCompetitionTest.mock.MockCompetition#applyScoreToCompetitors(Ljava/util/Map;)V
+false
+194f9a9cf113849e2961e17c64c089a4
+==
+applyScoreToCompetitors sportsCompetition.competition.Competition#applyScoreToCompetitors(Ljava/util/Map;)V

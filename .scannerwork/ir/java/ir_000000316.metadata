@@ -1,0 +1,7 @@
+sportsCompetition.competition.Master#<init>(Ljava/util/List;ILsportsCompetition/competitorSelection/CompetitorSelection;)V
+false
+07baacc1d020b50c69f251e8497cd41f
+sportsCompetition.match.MatchRandom#<init>()V
+sportsCompetition.match.MatchRandom#instance-init#
+==
+<init> sportsCompetition.competition.Master#<init>(Ljava/util/List;ILsportsCompetition/competitorSelection/CompetitorSelection;LsportsCompetition/match/Match;)V

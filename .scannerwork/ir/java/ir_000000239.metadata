@@ -1,0 +1,9 @@
+sportsCompetition.competition.Competition#ranking()Ljava/util/Map;
+false
+36c7f35bb4f5ea9dcae1cee42c7b3ec5
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+sportsCompetition.util.MapUtil#sortByDescendingValue(Ljava/util/Map;)Ljava/util/Map;
+==
+getPoints sportsCompetition.Competitor#getPoints()I
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

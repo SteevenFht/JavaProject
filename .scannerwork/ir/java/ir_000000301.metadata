@@ -1,0 +1,7 @@
+sportsCompetitionTest.mock.MockMatch#versus(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)Ljava/util/Map;
+false
+3ec57251449a08091a30476d97672b34
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+==
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

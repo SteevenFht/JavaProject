@@ -1,0 +1,7 @@
+sportsCompetitionTest.competitorSelection.FirstTwoGroupStageTest#getNumberOfSelectedCompetitorsTest()V
+false
+aa0ae4fff369612c8dc5c0dd961d3130
+==
+!unknownMethod! !unknownMethod!
+getNBLeagues sportsCompetition.competition.Master#getNBLeagues()I
+getNumberOfSelectedCompetitors sportsCompetition.competitorSelection.CompetitorSelection#getNumberOfSelectedCompetitors(I)I

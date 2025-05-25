@@ -1,0 +1,59 @@
+
+8sportsCompetition.Competitor#equals(Ljava/lang/Object;)Zc
+Y/Users/steeven/Desktop/github/competition/src/main/java/sportsCompetition/Competitor.java8 8("1"4*!
+2; ;(L"
+; ;(L
+""*Ö
+3;- ;(1r
+p
+;- ;(6
+%1java.lang.String"__id*F
+
+__unknown_file (**(
+sportsCompetition.Competitor"
+namey
+w
+;> ;(H
+%2java.lang.String"__id*M
+
+__unknown_file (1*/
+%
+othersportsCompetition.Competitor"
+nameÒÏ
+;- ;(I
+%3boolean",java.lang.String#equals(Ljava/lang/Object;)Z*4
+
+__unknown_file (
+
+%1java.lang.String*4
+
+__unknown_file (
+
+%2java.lang.String2equals(Ljava/lang/Object;)*
+2*é
+4:# :($n
+l
+: :(%%
+othersportsCompetition.Competitor"__id*3
+
+__unknown_file (
+
+ojava.lang.Objectb
+`
+; ;('
+%0boolean"	__compare*
+; ;(
+==*
+; ;(
+""*
+; ;('
+""*
+2
+3*!
+1=
+ =("
+= =(
+"":!
+8 8("
+ojava.lang.ObjectB 
+sportsCompetition.CompetitorHX

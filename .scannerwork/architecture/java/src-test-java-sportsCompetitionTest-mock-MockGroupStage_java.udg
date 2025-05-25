@@ -1,0 +1,153 @@
+
+1.0steevenfht_competitionJavaFrontend"1748208985647*java2.Bç
+A
+<src/test/java/sportsCompetitionTest/mock/MockGroupStage.java2
+
+package4
+
+sportsCompetitionTest.mock5
+.
+)sportsCompetitionTest.mock.MockGroupStage7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+MockGroupStage12
+?
+9sportsCompetition.competitorSelection.CompetitorSelection14
+
+unknown15
+
+
+implements16
+
+
+uses17
+A
+;sportsCompetitionTest.mock.MockGroupStage.nbTimeCompetitors19
+
+field20
+
+private21
+
+nbTimeCompetitors22
+:
+4sportsCompetitionTest.mock.MockGroupStage#<init>(I)V24
+
+method25
+
+calls26
+
+
+references27
+R
+LsportsCompetitionTest.mock.MockGroupStage#getNumberOfSelectedCompetitors(I)I29
+$
+getNumberOfSelectedCompetitors30
+h
+bsportsCompetitionTest.mock.MockGroupStage#selectRemainingPlayers(Ljava/util/List;)Ljava/util/List;32
+
+selectRemainingPlayers33
+"
+sportsCompetition.Competitor35J
+
+1
+12Z
+
+3	
+354jë
+
+13
+131415
+@
+28:
+282925 *
+1 (26:3B
+	
+9
+10
+
+
+11
+30
+@
+31:
+313225 *
+1 (26:3B
+	
+9
+10
+
+
+11
+33
+@
+23:
+232425 *
+1 (26:3B
+	
+9
+10
+
+
+11
+12
+@
+18:
+181920 *
+1 (	26:3B
+	
+9
+21
+
+
+11
+22
+
+34
+343515
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12rî
+
+61316*
+1( (;
+
+61317*
+1( (;
+
+23626*
+1	 (
+
+23617*
+1 (
+
+23627*
+1 (
+
+231827*
+1 (
+
+281827*
+1
+ (
+
+313417*
+1 (
+
+313417*
+1: (D

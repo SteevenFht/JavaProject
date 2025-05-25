@@ -1,0 +1,9 @@
+sportsCompetition.observer.Bookmaker#checkRate(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)V
+false
+552c9c5d6f052be2f50d4235aa7429a5
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+==
+add java.util.List#add(Ljava/lang/Object;)Z
+containsKey java.util.Map#containsKey(Ljava/lang/Object;)Z
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

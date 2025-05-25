@@ -1,0 +1,97 @@
+
+1.0steevenfht_competitionJavaFrontend"1748208984356*java2.BÁ
+5
+0src/main/java/sportsCompetition/match/Match.java2
+
+package4
+
+sportsCompetition.match5
+"
+sportsCompetition.match.Match7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+
+Match12
+w
+qsportsCompetition.match.Match#versus(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)Ljava/util/Map;14
+
+method15
+
+versus16
+"
+sportsCompetition.Competitor18
+
+unknown19
+
+	has param20
+
+
+uses21
+
+sportsCompetition.Results23
+
+is type24J
+
+1
+12Z
+
+3	
+354j•
+@
+13:
+131415 *
+1 (26:3B
+	
+9
+10
+
+
+11
+16
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+
+22
+222319
+
+17
+171819rÿ
+
+131720*
+1! (+
+
+131720*
+10 (:
+
+131721*
+1 (
+
+132221*
+1 (
+
+131724*
+1, (.
+
+131721*
+1! (+
+
+131724*
+1; (=
+
+131721*
+10 (:

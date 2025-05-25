@@ -1,0 +1,5 @@
+sportsCompetition.observer.Observable#addObserver(LsportsCompetition/observer/MatchObserver;)V
+false
+2302b39f8d91aa6c342031f982e341c7
+==
+add java.util.List#add(Ljava/lang/Object;)Z

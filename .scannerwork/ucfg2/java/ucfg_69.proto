@@ -1,0 +1,70 @@
+
+xsportsCompetitionTest.mock.MockMatch#versus(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)Ljava/util/Map;k
+a/Users/steeven/Desktop/github/competition/src/test/java/sportsCompetitionTest/mock/MockMatch.java  (&"1*Ò
+1 (86
+' (B
+%0java.util.HashMap"java.util.HashMapf
+d
+# (D
+%1"java.util.HashMap#<init>()V*5
+
+__unknown_file (
+
+%0java.util.HashMapb
+`
+ (E
+versusjava.util.Map"__id*5
+
+__unknown_file (
+
+%0java.util.HashMapW
+U
+ ( 
+%2sportsCompetition.Results"__id*"
+
+__unknown_file (
+""ð
+í
+ (!
+%3sportsCompetition.Results"__mapSet*5
+
+__unknown_file (
+
+versusjava.util.Map*@
+
+__unknown_file ($
+"
+c1sportsCompetition.Competitor*=
+
+__unknown_file (!
+
+%2sportsCompetition.ResultsW
+U
+ (
+%4sportsCompetition.Results"__id*"
+
+__unknown_file (
+""ð
+í
+ ( 
+%5sportsCompetition.Results"__mapSet*5
+
+__unknown_file (
+
+versusjava.util.Map*@
+
+__unknown_file ($
+"
+c2sportsCompetition.Competitor*=
+
+__unknown_file (!
+
+%4sportsCompetition.Results"%
+ (
+
+versusjava.util.Map:.
+' (5"
+c1sportsCompetition.Competitor:.
+6 (C"
+c2sportsCompetition.CompetitorB(&
+$sportsCompetitionTest.mock.MockMatchH

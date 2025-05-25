@@ -1,0 +1,8 @@
+sportsCompetitionTest.competition.LeagueTest#goodMatch()V
+false
+2b3ff1b7a45a7965eb9a028caa0fc3f2
+==
+!unknownMethod! !unknownMethod!
+equals sportsCompetition.Competitor#equals(Ljava/lang/Object;)Z
+get java.util.List#get(I)Ljava/lang/Object;
+size java.util.List#size()I

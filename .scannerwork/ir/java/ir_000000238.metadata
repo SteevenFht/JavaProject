@@ -1,0 +1,5 @@
+sportsCompetition.competition.Competition#<init>(Ljava/util/List;LsportsCompetition/match/Match;)V
+false
+29aa3697e60984b66a476437cc955f27
+==
+<init> sportsCompetition.observer.Observable#<init>()V

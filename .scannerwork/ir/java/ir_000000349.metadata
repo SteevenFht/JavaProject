@@ -1,0 +1,5 @@
+sportsCompetitionTest.competition.LeagueTest#CreateCompetition(Ljava/util/List;LsportsCompetition/match/Match;)LsportsCompetition/competition/Competition;
+false
+e2a6525fc657ffe86e585e6e26aa1ebf
+sportsCompetition.competition.League#<init>(Ljava/util/List;LsportsCompetition/match/Match;)V
+sportsCompetition.competition.League#instance-init#

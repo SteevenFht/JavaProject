@@ -1,0 +1,18 @@
+sportsCompetition.competition.Master#generateLeague()V
+false
+42cbe55a5ccd15e601a4c74972ab4aad
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+java.util.LinkedList#<init>()V
+java.util.LinkedList#instance-init#
+sportsCompetition.competition.League#<init>(Ljava/util/List;LsportsCompetition/match/Match;)V
+sportsCompetition.competition.League#instance-init#
+==
+add java.util.List#add(Ljava/lang/Object;)Z
+getCompetitors sportsCompetition.competition.Competition#getCompetitors()Ljava/util/List;
+getMatchType sportsCompetition.competition.Competition#getMatchType()LsportsCompetition/match/Match;
+getNBLeagues sportsCompetition.competition.Master#getNBLeagues()I
+getObservers sportsCompetition.observer.Observable#getObservers()Ljava/util/List;
+remove java.util.List#remove(I)Ljava/lang/Object;
+setObservers sportsCompetition.observer.Observable#setObservers(Ljava/util/List;)V
+size java.util.List#size()I

@@ -1,0 +1,69 @@
+
+ösportsCompetitionTest.competition.LeagueTest#CreateCompetition(Ljava/util/List;LsportsCompetition/match/Match;)LsportsCompetition/competition/Competition;s
+i/Users/steeven/Desktop/github/competition/src/test/java/sportsCompetitionTest/competition/LeagueTest.java (("startingBlock*î
+startingBlock( (Sê
+ç
+ (
+
+%2"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*;
+
+__unknown_file (
+
+competitorsjava.util.List]
+[
+: (E
+competitorsjava.util.List"__annotation*"
+
+__unknown_file (
+
+%2ô
+ñ
+ (
+
+%3"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*D
+
+__unknown_file ((
+&
+matchsportsCompetition.match.Matchf
+d
+M (R&
+matchsportsCompetition.match.Match"__annotation*"
+
+__unknown_file (
+
+%3*
+1*È
+1 (^\
+ (*
+%0$sportsCompetition.competition.League"$sportsCompetition.competition.Leagueø
+º
+	 (&
+%1"]sportsCompetition.competition.League#<init>(Ljava/util/List;LsportsCompetition/match/Match;)V*H
+
+__unknown_file (,
+*
+%0$sportsCompetition.competition.League*;
+
+__unknown_file (
+
+competitorsjava.util.List*D
+
+__unknown_file ((
+&
+matchsportsCompetition.match.Match"8
+ (',
+*
+%0$sportsCompetition.competition.League:)
+) (F
+competitorsjava.util.List:2
+G (R&
+matchsportsCompetition.match.MatchB0.
+,sportsCompetitionTest.competition.LeagueTest

@@ -1,0 +1,12 @@
+sportsCompetition.competitorSelection.FirstGroupStage#selectRemainingPlayers(Ljava/util/List;)Ljava/util/List;
+false
+6c6ea60e01ebcc2d43e4296397797216
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+sportsCompetition.exception.InvalidInputValueException#<init>(Ljava/lang/String;)V
+sportsCompetition.exception.InvalidInputValueException#instance-init#
+==
+add java.util.List#add(Ljava/lang/Object;)Z
+keySet java.util.Map#keySet()Ljava/util/Set;
+size java.util.Map#size()I
+toArray java.util.Set#toArray()[Ljava/lang/Object;

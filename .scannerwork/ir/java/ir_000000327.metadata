@@ -1,0 +1,14 @@
+sportsCompetition.competition.Tournament#<init>(Ljava/util/List;LsportsCompetition/match/Match;)V
+false
+76293bc52564f3c3813a29318b01fad6
+java.lang.Math#ceil(D)D
+java.lang.Math#floor(D)D
+java.lang.Math#log(D)D
+java.util.LinkedList#<init>()V
+java.util.LinkedList#instance-init#
+sportsCompetition.exception.InvalidInputValueException#<init>(Ljava/lang/String;)V
+sportsCompetition.exception.InvalidInputValueException#instance-init#
+==
+<init> sportsCompetition.competition.Competition#<init>(Ljava/util/List;LsportsCompetition/match/Match;)V
+add java.util.List#add(Ljava/lang/Object;)Z
+size java.util.List#size()I

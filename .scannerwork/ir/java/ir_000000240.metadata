@@ -1,0 +1,9 @@
+sportsCompetition.competition.Competition#applyScoreToCompetitors(Ljava/util/Map;)V
+false
+05a2a3131dd332b35864acc86bf538ab
+sportsCompetition.Results#getPoint()I
+==
+addPoints sportsCompetition.Competitor#addPoints(I)V
+entrySet java.util.Map#entrySet()Ljava/util/Set;
+getKey java.util.Map$Entry#getKey()Ljava/lang/Object;
+getValue java.util.Map$Entry#getValue()Ljava/lang/Object;

@@ -1,0 +1,148 @@
+
+1.0steevenfht_competitionJavaFrontend"1748208984278*java2.BÛ
+D
+?src/test/java/sportsCompetitionTest/mock/MatchObserverMock.java2
+
+package4
+
+sportsCompetitionTest.mock5
+1
+,sportsCompetitionTest.mock.MatchObserverMock7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+MatchObserverMock12
+.
+(sportsCompetition.observer.MatchObserver14
+
+unknown15
+
+
+implements16
+
+
+uses17
+E
+?sportsCompetitionTest.mock.MatchObserverMock.matchPlayedCounter19
+
+field20
+
+matchPlayedCounter21
+<
+6sportsCompetitionTest.mock.MatchObserverMock#<init>()V23
+
+method24
+
+calls25
+
+
+references26
+P
+JsportsCompetitionTest.mock.MatchObserverMock#matchPlayed(Ljava/util/Map;)V28
+
+matchPlayed29
+"
+sportsCompetition.Competitor31
+
+sportsCompetition.Results33J
+
+1
+12Z
+
+3	
+354j½
+@
+22:
+222324 *
+1 (26:3B
+	
+9
+10
+
+
+11
+12
+9
+64
+678 *
+1	 	(:3B
+	
+9
+10
+
+
+11
+12
+@
+27:
+272824 *
+1 (26:3B
+	
+9
+10
+
+
+11
+29
+
+13
+131415
+
+32
+323315
+@
+18:
+181920 *
+1
+ 
+(26:3B
+	
+9
+10
+
+
+11
+21
+
+30
+303115r¢
+
+61316*
+1	+ 	(8
+
+61317*
+1	+ 	(8
+
+22625*
+1	 (
+
+22617*
+1 (
+
+22626*
+1 (
+
+221826*
+1 (
+
+273017*
+1 ((
+
+273217*
+1* (1
+
+27617*
+1 (
+
+27626*
+1 (
+
+271826*
+1 (

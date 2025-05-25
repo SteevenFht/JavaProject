@@ -1,0 +1,105 @@
+
+šsportsCompetitionTest.competition.MasterTest#CreateCompetition(Ljava/util/List;LsportsCompetition/match/Match;)LsportsCompetition/competition/Competition;s
+i/Users/steeven/Desktop/github/competition/src/test/java/sportsCompetitionTest/competition/MasterTest.java (("startingBlock*”
+startingBlock( (S
+
+ (
+
+%6"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*;
+
+__unknown_file (
+
+competitorsjava.util.List]
+[
+: (E
+competitorsjava.util.List"__annotation*"
+
+__unknown_file (
+
+%6™
+–
+ (
+
+%7"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*D
+
+__unknown_file ((
+&
+matchsportsCompetition.match.Matchf
+d
+M (R&
+matchsportsCompetition.match.Match"__annotation*"
+
+__unknown_file (
+
+%7*
+1*Í
+1" (:‡„
+& (8>
+%08sportsCompetition.competitorSelection.FirstTwoGroupStage"8sportsCompetition.competitorSelection.FirstTwoGroupStageµ
+²
+" (:
+%1"BsportsCompetition.competitorSelection.FirstTwoGroupStage#<init>()V*\
+
+__unknown_file (@
+>
+%08sportsCompetition.competitorSelection.FirstTwoGroupStage¹
+¶
+ (;F
+	selection9sportsCompetition.competitorSelection.CompetitorSelection"__id*\
+
+__unknown_file (@
+>
+%08sportsCompetition.competitorSelection.FirstTwoGroupStageˆ
+…
+ ($
+%2java.util.List"__id*]
+
+__unknown_file (A*?.
+,sportsCompetitionTest.competition.MasterTest"
+competitors˜
+•
+3 (=*
+%3$sportsCompetitionTest.mock.MockMatch"__id*W
+
+__unknown_file (;*9.
+,sportsCompetitionTest.competition.MasterTest"
+match^\
+ (*
+%4$sportsCompetition.competition.Master"$sportsCompetition.competition.Masterÿ
+ü
+	 (>
+%5"™sportsCompetition.competition.Master#<init>(Ljava/util/List;ILsportsCompetition/competitorSelection/CompetitorSelection;LsportsCompetition/match/Match;)V*H
+
+__unknown_file (,
+*
+%4$sportsCompetition.competition.Master*2
+
+__unknown_file (
+
+%2java.util.List* 
+
+__unknown_file (2*d
+
+__unknown_file (H
+F
+	selection9sportsCompetition.competitorSelection.CompetitorSelection*H
+
+__unknown_file (,
+*
+%3$sportsCompetitionTest.mock.MockMatch"8
+ (?,
+*
+%4$sportsCompetition.competition.Master:)
+) (F
+competitorsjava.util.List:2
+G (R&
+matchsportsCompetition.match.MatchB0.
+,sportsCompetitionTest.competition.MasterTest

@@ -1,0 +1,7 @@
+sportsCompetition.competition.Competition#play()V
+false
+cc3d3007c61e7aea62ed5a6c71b8366a
+==
+DisplayRanking sportsCompetition.competition.Competition#DisplayRanking(Ljava/util/Map;)V
+play sportsCompetition.competition.Competition#play(Ljava/util/List;)V
+ranking sportsCompetition.competition.Competition#ranking()Ljava/util/Map;

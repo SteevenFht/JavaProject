@@ -1,0 +1,11 @@
+sportsCompetitionTest.MatchTest#init()V
+false
+310caf79fbd04d5535fbe85a721a0824
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+sportsCompetition.Competitor#<init>(Ljava/lang/String;)V
+sportsCompetition.Competitor#instance-init#
+sportsCompetitionTest.mock.MockMatch#<init>()V
+sportsCompetitionTest.mock.MockMatch#instance-init#
+==
+add java.util.List#add(Ljava/lang/Object;)Z

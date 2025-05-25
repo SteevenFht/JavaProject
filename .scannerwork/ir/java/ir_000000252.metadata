@@ -1,0 +1,9 @@
+sportsCompetition.competition.League#generateMatchs(Ljava/util/List;)Ljava/util/LinkedList;
+false
+b0b79008c92675dc9109bae1239f4b8a
+java.util.Collections#shuffle(Ljava/util/List;)V
+java.util.LinkedList#<init>()V
+java.util.LinkedList#instance-init#
+==
+add java.util.LinkedList#add(Ljava/lang/Object;)Z
+equals sportsCompetition.Competitor#equals(Ljava/lang/Object;)Z

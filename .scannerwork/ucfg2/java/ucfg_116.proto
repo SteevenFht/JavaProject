@@ -1,0 +1,15 @@
+
+DsportsCompetition.observer.Observable#getObservers()Ljava/util/List;l
+b/Users/steeven/Desktop/github/competition/src/main/java/sportsCompetition/observer/Observable.java (("1*±
+13 (7~
+|
+3 (A
+%0java.util.List"__id*T
+
+__unknown_file (8*6'
+%sportsCompetition.observer.Observable"
+	observers""
+, (B
+
+%0java.util.ListB)'
+%sportsCompetition.observer.ObservableH

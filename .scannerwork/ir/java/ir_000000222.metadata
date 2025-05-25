@@ -1,0 +1,14 @@
+sportsCompetition.observer.Journalist#matchPlayed(Ljava/util/Map;)V
+false
+66b1407681c235981f10984ed3b10827
+java.lang.String#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+==
+entrySet java.util.Map#entrySet()Ljava/util/Set;
+get java.util.List#get(I)Ljava/lang/Object;
+getKey java.util.Map$Entry#getKey()Ljava/lang/Object;
+getName sportsCompetition.Competitor#getName()Ljava/lang/String;
+getName sportsCompetition.observer.Journalist#getName()Ljava/lang/String;
+getValue java.util.Map$Entry#getValue()Ljava/lang/Object;
+nextInt java.util.Random#nextInt(I)I
+println java.io.PrintStream#println(Ljava/lang/String;)V
+size java.util.List#size()I

@@ -1,0 +1,8 @@
+sportsCompetition.competition.League#play(Ljava/util/List;)V
+false
+1d6f027e085843fbd8ad1b711e4af236
+==
+generateMatchs sportsCompetition.competition.League#generateMatchs(Ljava/util/List;)Ljava/util/LinkedList;
+isEmpty java.util.AbstractCollection#isEmpty()Z
+playMatch sportsCompetition.competition.Competition#playMatch(LsportsCompetition/Competitor;LsportsCompetition/Competitor;)V
+pollFirst java.util.LinkedList#pollFirst()Ljava/lang/Object;

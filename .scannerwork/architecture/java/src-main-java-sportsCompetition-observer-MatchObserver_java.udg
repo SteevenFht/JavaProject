@@ -1,0 +1,75 @@
+
+1.0steevenfht_competitionJavaFrontend"1748208984485*java2.BÂ
+@
+;src/main/java/sportsCompetition/observer/MatchObserver.java2
+
+package4
+
+sportsCompetition.observer5
+-
+(sportsCompetition.observer.MatchObserver7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+
+MatchObserver12
+L
+FsportsCompetition.observer.MatchObserver#matchPlayed(Ljava/util/Map;)V14
+
+method15
+
+matchPlayed16
+"
+sportsCompetition.Competitor18
+
+unknown19
+
+
+uses20
+
+sportsCompetition.Results22J
+
+1
+12Z
+
+3	
+354j¥
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+
+21
+212219
+@
+13:
+131415 *
+1	 	(26:3B
+	
+9
+10
+
+
+11
+16
+
+17
+171819r6
+
+131720*
+1	 	((
+
+132120*
+1	* 	(1
