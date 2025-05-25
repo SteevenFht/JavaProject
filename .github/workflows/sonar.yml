@@ -12,6 +12,7 @@ jobs:
     env:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       SONAR_HOST_URL: https://sonarcloud.io
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -19,23 +20,20 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
-          distribution: temurin
           java-version: '17'
+          distribution: 'temurin'
 
-      - name: Add JAVA_HOME to environment
-        run: echo "JAVA_HOME=$JAVA_HOME" >> $GITHUB_ENV
+      - name: Set JAVA_HOME environment variable
+        run: echo "JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))" >> $GITHUB_ENV
 
       - name: Build with Maven
         run: mvn clean verify
 
-      - name: Download SonarScanner CLI
-        run: |
-          curl -sSLo sonar-scanner-cli.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.8.0.2856-linux.zip
-          unzip -q sonar-scanner-cli.zip
-          mv sonar-scanner-4.8.0.2856-linux sonar-scanner
-
       - name: Run SonarQube Scan
         run: |
+          echo "Using java version:"
+          $JAVA_HOME/bin/java -version
+
           ./sonar-scanner/bin/sonar-scanner \
             -Dsonar.projectKey=SteevenFht_competition \
             -Dsonar.organization=SteevenFht \
