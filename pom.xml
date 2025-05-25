@@ -12,13 +12,16 @@
 
     <name>Sports Competition</name>
 
-
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <main.class>sportsCompetition.Main</main.class>
         <junit.jupiter.version>5.9.3</junit.jupiter.version>
+        
+        <!-- Propriétés SonarCloud ajoutées -->
+        <sonar.organization>steevenfht</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
