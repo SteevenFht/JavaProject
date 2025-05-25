@@ -1,4 +1,4 @@
-name: SonarQube Scan
+name: CI with SonarCloud
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  sonar:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,17 +20,45 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Check Java version
-        run: java -version
+      - name: Download JUnit Console
+        run: |
+          mkdir -p lib
+          curl -L -o lib/junit-platform-console-standalone-1.9.0.jar \
+            https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.9.0/junit-platform-console-standalone-1.9.0.jar
 
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarqube-scan-action@v1
+      - name: Build project, generate docs, jar
+        run: make all
+
+      - name: Run tests
+        run: make test
+
+  sonar-scan:
+    runs-on: ubuntu-latest
+    needs: build-and-test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Download SonarScanner CLI
+        run: |
+          curl -sSLo sonar-scanner.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.8.0.2856-linux.zip
+          unzip sonar-scanner.zip
+          mv sonar-scanner-4.8.0.2856-linux sonar-scanner
+          chmod +x sonar-scanner/bin/sonar-scanner
+
+      - name: Run SonarScanner
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
-          JAVA_HOME: /usr/lib/jvm/adoptopenjdk-17-hotspot-amd64
-        with:
-          args: >
-            -Dsonar.projectKey=SteevenFht_competition
-            -Dsonar.organization=SteevenFht
+        run: |
+          ./sonar-scanner/bin/sonar-scanner \
+            -Dsonar.projectKey=SteevenFht_competition \
+            -Dsonar.organization=SteevenFht \
             -Dsonar.java.binaries=classes
