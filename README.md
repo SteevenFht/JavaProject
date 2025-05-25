@@ -2,128 +2,85 @@ Flahaut Steeven
 
 Righetti Massimiliano
 
-# Sport Competition
+Bien sûr ! Voici la version du README **sans la section Contribution** :
 
-[[_TOC_]]
+```markdown
+# Sports Competition - Portfolio QA
 
 ## Description
 
-The objective of the project is to create a sports competition.
-It requires to support multiple types of competition as well as a way to add more types of match.
+Ce projet Java simule une compétition sportive avec plusieurs modules (compétition, sélection des concurrents, gestion des matchs, etc.).
 
+Ce dépôt sert également de portfolio pour démontrer mes compétences en assurance qualité (QA) à travers :
 
-## How to
+- La mise en place de tests unitaires automatisés (JUnit)  
+- L’intégration d’un pipeline CI avec GitHub Actions  
+- La génération de documentation (Javadoc)  
+- La gestion de la qualité du code  
 
-### Retrieve the project
+## Technologies utilisées
 
-- without SSH
+- Java 17  
+- JUnit 5 (plateforme console)  
+- Makefile pour automatisation des tâches  
+- GitHub Actions pour CI/CD  
 
-```bash
-git clone https://gitlab-etu.fil.univ-lille.fr/steeven.flahaut.etu/flahaut-righetti-coo.git
+## Structure du projet
+
 ```
 
-- with SSH
+.
+├── src/                  # Code source Java
+├── test/                 # Tests unitaires Java
+├── lib/                  # Bibliothèques tierces (JUnit)
+├── docs/                 # Documentation générée (Javadoc)
+├── Makefile              # Automatisation compilation, test, doc
+└── .github/workflows/    # Workflow CI GitHub Actions
+
+````
+
+## Comment lancer le projet
+
+### Prérequis
+
+- Java 17 installé  
+- Make installé (Linux/MacOS)  
+
+### Compilation et lancement
 
 ```bash
-git clone git@gitlab-etu.fil.univ-lille.fr:steeven.flahaut.etu/flahaut-righetti-coo.git
-```
+make
+make launch
+````
 
-### Generation of the documentation
+### Lancer les tests
 
-- without make:
-```bash
-javadoc -classpath src -d docs sportsCompetition sportsCompetition.competition sportsCompetition.competitorSelection sportsCompetition.exception sportsCompetition.match sportsCompetition.util sportsCompetition.observer
-```
-- with make:
-```bash
-make docs
-```
-The documentation is located in `./docs/index.html`
-
-### Compilation
-
-- without make:
-```bash
-javac -classpath src -d classes src/sportsCompetition/*.java
-```
-- with make:
-```bash
-make class
-```
-
-### Generation of `.jar`
-
-- without make:
-```bash
-jar cvfe ./appli.jar sportsCompetition.Main -C classes .
-```
-- with make:
-```bash
-make jar
-```
-
-### Tests
-
-#### Test compilation
-
-- without make:
-```bash
-javac -d classes -classpath ./lib/junit-platform-console-standalone-1.9.0.jar ./src/sportsCompetition/*.java ./src/sportsCompetition/util/*.java ./src/sportsCompetition/competition/*.java ./src/sportsCompetition/competitorSelection/*.java ./src/sportsCompetition/exception/*.java ./src/sportsCompetition/match/*.java ./src/sportsCompetition/observer/*.java ./test/sportsCompetitionTest/*.java ./test/sportsCompetitionTest/mock/*.java ./test/sportsCompetitionTest/competition/*.java ./test/sportsCompetitionTest/competitorSelection/*.java
-```
-- with make:
-```bash
-make testCompilation
-```
-
-#### Test execution
-
-- without make:
-```bash
-java -jar ./lib/junit-platform-console-standalone-1.9.0.jar -cp classes --scan-classpath --disable-banner
-```
-- with make:
 ```bash
 make test
 ```
 
-### Execution
+## Intégration Continue (CI)
 
-#### Without `.jar`
-- without make:
-```bash
-java -classpath classes sportsCompetition.Main
-```
-- with make:
-```bash
-make launch
-```
+Un workflow GitHub Actions est configuré pour :
 
-#### With `.jar`
+* Compiler le code à chaque push sur `main`
+* Télécharger JUnit console pour exécuter les tests
+* Exécuter les tests automatiquement
+* Nettoyer les fichiers générés après tests
 
-[generate the .jar here](#generation-of-.jar)
-- without make:
-```bash
-java -jar appli.jar
-```
-- with make:
-```bash
-make launchJAR
-```
+Le fichier de workflow se trouve dans `.github/workflows/makefile.yml`.
 
-### Clean the project folder
+## Qualité du code & documentation
 
-```bash
-make clean
-```
+* Documentation Javadoc générée avec `make docs`
+* Les tests et la compilation sont automatisés via Makefile et GitHub Actions
 
-## Key aspects
+## Prochaines étapes
 
+* Ajout de rapports de couverture de tests
+* Intégration d’outils de qualité de code (Checkstyle, SonarQube)
+* Ajout de tests d’intégration et tests fonctionnels automatisés
 
+## Contact
 
-## UML
-
-![uml](./uml/uml.svg)
-
-### Links
-- [uml.svg](./uml/uml.svg)
-- [uml.puml](./uml/uml.puml)
+Pour toute question, contactez-moi via mon profil GitHub.
