@@ -12,7 +12,8 @@ import sportsCompetition.match.Match;
 import sportsCompetition.util.TextFormat;
 import sportsCompetitionTest.mock.MatchObserverMock;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 
 
