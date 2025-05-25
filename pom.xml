@@ -22,7 +22,7 @@
         <!-- Propriétés SonarCloud ajoutées -->
         <sonar.organization>steevenfht</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.projectKey>steevenfht_sportsCompetition_competition</sonar.projectKey>
+        <sonar.projectKey>steevenfht_competition</sonar.projectKey>
     </properties>
 
     <dependencies>
