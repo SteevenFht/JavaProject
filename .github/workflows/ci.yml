@@ -20,11 +20,15 @@ jobs:
           distribution: temurin
           java-version: 17
 
+      - name: Check Java version
+        run: java -version
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v1
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
+          JAVA_HOME: /usr/lib/jvm/adoptopenjdk-17-hotspot-amd64
         with:
           args: >
             -Dsonar.projectKey=SteevenFht_competition
