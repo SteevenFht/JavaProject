@@ -1,4 +1,4 @@
-name: Java CI with Makefile
+name: Makefile CI
 
 on:
   push:
@@ -11,26 +11,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
 
-    - name: Download JUnit Console
-      run: |
-        mkdir -p lib
-        curl -L -o lib/junit-platform-console-standalone-1.9.0.jar \
-        https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.9.0/junit-platform-console-standalone-1.9.0.jar
+      - name: Download JUnit Console
+        run: |
+          mkdir -p lib
+          curl -L -o lib/junit-platform-console-standalone-1.9.0.jar \
+            https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.9.0/junit-platform-console-standalone-1.9.0.jar
 
-    - name: Build project
-      run: make
+      - name: Build with Makefile
+        run: make
 
-    - name: Run tests
-      run: make test
+      - name: Run tests
+        run: make test
 
-    - name: Clean build artifacts
-      run: make clean
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        with:
+          projectKey: SteevenFht_competition
+          organization: SteevenFht
+          token: ${{ secrets.SONAR_TOKEN }}
