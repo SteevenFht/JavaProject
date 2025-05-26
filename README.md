@@ -24,8 +24,6 @@ Ce dépôt sert également de portfolio pour démontrer mes compétences en assu
 
 ## Structure du projet
 
-```
-
 .
 ├── src/                  # Code source Java
 ├── test/                 # Tests unitaires Java
