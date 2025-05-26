@@ -2,8 +2,6 @@ Flahaut Steeven
 
 Righetti Massimiliano
 
-Bien sûr ! Voici la version du README **sans la section Contribution** :
-
 ```markdown
 # Sports Competition - Portfolio QA
 
@@ -48,10 +46,7 @@ Ce dépôt sert également de portfolio pour démontrer mes compétences en assu
 
 ### Compilation et lancement
 
-```bash
-make
-make launch
-````
+TODO => suite au changement de make vers maven
 
 ### Lancer les tests
 
