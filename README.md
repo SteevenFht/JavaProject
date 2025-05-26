@@ -25,12 +25,17 @@ Ce dépôt sert également de portfolio pour démontrer mes compétences en assu
 ## Structure du projet
 
 .
-├── src/                  # Code source Java
-├── test/                 # Tests unitaires Java
-├── lib/                  # Bibliothèques tierces (JUnit)
-├── docs/                 # Documentation générée (Javadoc)
-├── Makefile              # Automatisation compilation, test, doc
-└── .github/workflows/    # Workflow CI GitHub Actions
+├── .github/
+│   └── workflows/             # Définition des workflows CI/CD avec GitHub Actions
+├── .scannerwork/              # Configuration pour SonarQube (analyse de la qualité du code)
+├── src/                       # Code source Java
+├── uml/                       # Diagrammes UML du projet
+├── appli.jar                  # Fichier JAR exécutable du projet
+├── pom.xml                    # Fichier de configuration Maven
+├── sonar-project.properties   # Paramètres de configuration pour SonarQube
+├── .gitignore                 # Fichiers et répertoires à ignorer par Git
+└── README.md                  # Documentation du projet
+
 
 ````
 
@@ -39,7 +44,7 @@ Ce dépôt sert également de portfolio pour démontrer mes compétences en assu
 ### Prérequis
 
 - Java 17 installé  
-- Make installé (Linux/MacOS)  
+- TODO MAVEN  
 
 ### Compilation et lancement
 
