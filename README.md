@@ -49,9 +49,7 @@ TODO => suite au changement de make vers maven
 
 ### Lancer les tests
 
-```bash
-make test
-```
+TODO => suite au changement de make vers maven
 
 ## Intégration Continue (CI)
 
@@ -77,4 +75,4 @@ Le fichier de workflow se trouve dans `.github/workflows/makefile.yml`.
 
 ## Contact
 
-Pour toute question, contactez-moi via mon profil GitHub.
+Pour toute question, contactez-moi via mon profil GitHub ou sur Linkedin.
