@@ -1,6 +1,5 @@
 Flahaut Steeven
 
-Righetti Massimiliano
 
 ```markdown
 # Sports Competition - Portfolio QA
@@ -41,40 +40,51 @@ Ce dépôt sert également de portfolio pour démontrer mes compétences en assu
 
 ## Comment lancer le projet
 
-### Prérequis
+## Prérequis
 
 - Java 17 installé  
-- TODO MAVEN  
+- Maven installé (`mvn` disponible en ligne de commande)
 
-### Compilation et lancement
+## Compilation et exécution
 
-TODO => suite au changement de make vers maven
+```bash
+# Nettoyer et compiler le projet
+mvn clean package
+
+# Lancer le programme
+java -jar target/appli.jar
+```
 
 ### Lancer les tests
 
-TODO => suite au changement de make vers maven
+```bash
+mvn test
+```
 
 ## Intégration Continue (CI)
 
 Un workflow GitHub Actions est configuré pour :
 
-* Compiler le code à chaque push sur `main`
-* Télécharger JUnit console pour exécuter les tests
-* Exécuter les tests automatiquement
-* Nettoyer les fichiers générés après tests
+* Compiler automatiquement le projet à chaque push
 
-Le fichier de workflow se trouve dans `.github/workflows/makefile.yml`.
+* Exécuter les tests avec JUnit
+
+* Nettoyer les fichiers temporaires générés
+
+ Le fichier de workflow se trouve dans : .github/workflows/tests.yml
+
 
 ## Qualité du code & documentation
 
-* Documentation Javadoc générée avec `make docs`
-* Les tests et la compilation sont automatisés via Makefile et GitHub Actions
+* Documentation : générée via Javadoc (mvn javadoc:javadoc)
+* Analyse de qualité : support partiel via SonarQube (sonar-scanner)
 
 ## Prochaines étapes
 
-* Ajout de rapports de couverture de tests
-* Intégration d’outils de qualité de code (Checkstyle, SonarQube)
-* Ajout de tests d’intégration et tests fonctionnels automatisés
+* Génération automatique de rapports de couverture (JaCoCo)
+* Intégration complète de SonarQube
+* Ajout de règles Checkstyle
+* Implémentation de tests d’intégration et tests fonctionnels
 
 ## Contact
 
