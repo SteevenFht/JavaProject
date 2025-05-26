@@ -20,7 +20,6 @@ Ce dépôt sert également de portfolio pour démontrer mes compétences en assu
 
 - Java 17  
 - JUnit 5 (plateforme console)  
-- Makefile pour automatisation des tâches  
 - GitHub Actions pour CI/CD  
 
 ## Structure du projet
